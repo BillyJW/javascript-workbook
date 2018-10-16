@@ -10,7 +10,17 @@ const rl = readline.createInterface({
 
 function rockPaperScissors(hand1, hand2) {
 
-  // Write code here
+  // user1 enters input
+  // check for valid input
+  // repeat if not, move on if valid
+  // user2 enders input
+  // check for valid inputs
+  // repeat if not, move on if valid
+  // user1 and user2 inputs are evaluated for win, loss, tie
+  // winner is declared
+  // loser is declared
+  // game starts over
+
 
 }
 
