@@ -7,7 +7,7 @@ const printListOfOlympians(arr) => {
         console.log(element); 
     }
 }
-
+ 
 
 
 printListOfOlympians(arrNames);
