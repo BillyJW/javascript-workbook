@@ -1,5 +1,12 @@
 'use strict';
 
+//verify valid input: 
+//  a input must have a block in it
+//  a block can only go on an empty spot or a block of higher value
+//move a block to the end of an array
+//check for win
+//  block length of object c == 4
+
 const assert = require('assert');
 const readline = require('readline');
 const rl = readline.createInterface({
