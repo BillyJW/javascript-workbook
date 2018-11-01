@@ -1,5 +1,33 @@
 'use strict';
 
+//hints
+//turn both into an array   .split('')
+//loop through guess array for each letter check for corrasponding letter in solution array
+//if corrasponding letter is right and right place
+//if letter in solution array its right letter wrong place
+
+const showHints=(guess)=>{
+  const guessArr = guess.splits('');
+  const solutionArr = solution.split('');
+  let rightLetterRightPlace = 0;
+  let rightLetterWrongPlace = 0;
+  guessArr.forEach((item, index)=>{
+    // console.log(item, index)
+    console.log(letter, 'current', solutionArr[index]);
+    const corraspondingLetter = solutionArr[index]
+    if(letter == corraspondingLetter) {
+      //add to right letter, right place count
+      rightLetterRightPlace ++
+    }else if(solutionArr.includes(letter)){
+      //add to right letter, wrong place
+      rightLetterWrongPlace ++
+    }
+    
+  });
+  return `${rightLetterRightPlace}-${rightLetterWrongPlace}`;
+  console.log(guessArr, SolutionArr)
+};
+
 const assert = require('assert');
 const readline = require('readline');
 const rl = readline.createInterface({
