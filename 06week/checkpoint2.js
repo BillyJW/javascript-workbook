@@ -7,8 +7,11 @@ const nums = strNums.map((input) => parseInt(input, 10));
 nums;
 
 // Find the sum of the even values
-const sumEvens;
-
+const evenNums = nums.filter(input => input % 2 == 0);
+// evenNums uses filter to find all numbers in the nums array that are divisible by 2 with a remainder of 0 and makes a new array with 
+// those that pass the test
+const sumEvens = evenNums.reduce((input, currentValue) => (input + currentValue));
+// sumEvens uses reduce to go one by one and add the values of each element in the array untill only one element remains
 console.log(sumEvens);
 
 // Find the index of the first "Austin" value (the value plus its index equals 512)
