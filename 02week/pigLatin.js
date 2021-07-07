@@ -10,8 +10,18 @@ const rl = readline.createInterface({
 
 function pigLatin(word) {
 
-  // Your code here
 
+
+  // Your code here
+  
+//receive user input
+//check if input is a word
+//checkIfWord
+//if truthy, move on, else return 'input valid word'
+//change string into an array
+//split array
+//splitArray
+//check if first letter is vowell, if truthy, join
 }
 
 
